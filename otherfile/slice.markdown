@@ -1,5 +1,5 @@
 # 关于指针切片
-
+源码位于runtime/slice.go
 ## 指针切片的常见bug
 ```go
 func main() {
