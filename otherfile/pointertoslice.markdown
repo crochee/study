@@ -1,5 +1,6 @@
 # 关于指针切片
 
+## 指针切片的常见bug
 ```go
 func main() {
 	m := parse()
@@ -48,3 +49,9 @@ for i := 0; i < len(stus); i++ {
 3 &{3 21}
 1 &{1 19}
 ```
+## 切片的原理
+
+关于详细的原理参考：https://www.jianshu.com/p/030aba2bff41
+
+
+
