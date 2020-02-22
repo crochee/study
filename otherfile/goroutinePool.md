@@ -147,3 +147,6 @@ func (p *pool) workStart(cnn *gorm.DB, num int) {
 	
 #  结构图
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200221173910217.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI0MTk0MTcz,size_16,color_FFFFFF,t_70)
+
+# goroutine调度
+详见：https://www.cnblogs.com/wdliu/p/9272220.html
