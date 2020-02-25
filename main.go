@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"golangStu/arithmetic"
+)
 
 /**
 * @ Description:
@@ -9,5 +12,6 @@ import "fmt"
  */
 
 func main() {
-	fmt.Println("hello word!")
+	nums1 := " u34 ui "
+	fmt.Println(arithmetic.MyAtoi(nums1))
 }
