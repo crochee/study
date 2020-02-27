@@ -244,3 +244,23 @@ COMMIT 事务确认
 
 SET AUTOCOMMIT=0 禁止自动提交
 SET AUTOCOMMIT=1 开启自动提交
+
+## 其他
+1.  应尽量避免在 where 子句中使用 or 来连接条件，否则将导致引擎放弃使用索引而进行全表扫描
+
+    select id from t where num=10 or num=20
+    可以这样查询：
+    select id from t where num=10 union all select id from t where num=20
+2.  in 和 not in 也要慎用，否则会导致全表扫描，如：
+
+    select id from t where num in(1,2,3)
+    对于连续的数值，能用 between 就不要用 in 了：
+    select id from t where num between 1 and 3
+3.  很多时候用 exists 代替 in 是一个好的选择：
+    
+    select num from a where num in(select num from b)
+    用下面的语句替换：
+    select num from a where exists(select 1 from b where num=a.num)
+    
+    
+    
