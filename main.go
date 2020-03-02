@@ -13,5 +13,5 @@ import (
 
 func main() {
 	nums1 := " u34 ui "
-	fmt.Println(arithmetic.MyAtoi(nums1))
+	fmt.Println(arithmetic.IsValidBST(nums1))
 }
