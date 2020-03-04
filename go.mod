@@ -11,3 +11,5 @@ replace (
 	golang.org/x/time => github.com/golang/time v0.0.0-20190308202827-9d24e82272b4
 	golang.org/x/tools => github.com/golang/tools v0.0.0-20190719005602-e377ae9d6386
 )
+
+require github.com/spaolacci/murmur3 v1.1.0 // indirect
