@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
-	"github.com/spaolacci/murmur3"
+	"github.com/mattn/go-gtk/gtk"
+	"os"
 )
 
 /**
@@ -12,7 +12,18 @@ import (
  */
 
 func main() {
-	var (
+	// 初始化
+	gtk.Init(&os.Args)
+	// 用户初始化
+	// 1)创建窗口
+	win := gtk.NewWindow(gtk.WINDOW_TOPLEVEL)
+	// 2)设置属性
+	win.SetTitle("first")
+	win.SetSizeRequest(480, 320)
+	win.Show()
+	// 主事件循环
+	gtk.Main()
+	/*var (
 		index  uint64
 		bucket = make(map[uint64]int)
 	)
@@ -20,7 +31,8 @@ func main() {
 		index = murmur3.Sum64([]byte(fmt.Sprint(i))) % 10
 		bucket[index]++
 	}
-	fmt.Println(bucket)
+	fmt.Printf("%p\n", &index)
+	fmt.Println(bucket, "\nthis:", unsafe.Pointer(&index))*/
 	// nums1 := " u34 ui "
 	// fmt.Println(arithmetic.IsValidBST(nums1))
 }

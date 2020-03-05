@@ -12,4 +12,8 @@ replace (
 	golang.org/x/tools => github.com/golang/tools v0.0.0-20190719005602-e377ae9d6386
 )
 
-require github.com/spaolacci/murmur3 v1.1.0 // indirect
+require (
+	github.com/mattn/go-gtk v0.0.0-20191030024613-af2e013261f5
+	github.com/mattn/go-pointer v0.0.0-20190911064623-a0a44394634f // indirect
+	github.com/spaolacci/murmur3 v1.1.0 // indirect
+)
