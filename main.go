@@ -1,9 +1,6 @@
 package main
 
-import (
-	"github.com/mattn/go-gtk/gtk"
-	"os"
-)
+import "golangStu/testmyself"
 
 /**
 * @ Description:
@@ -12,7 +9,8 @@ import (
  */
 
 func main() {
-	// 初始化
+	testmyself.StructTest()
+	/*// 初始化
 	gtk.Init(&os.Args)
 	// 用户初始化
 	// 1)创建窗口
@@ -22,7 +20,7 @@ func main() {
 	win.SetSizeRequest(480, 320)
 	win.Show()
 	// 主事件循环
-	gtk.Main()
+	gtk.Main()*/
 	/*var (
 		index  uint64
 		bucket = make(map[uint64]int)
