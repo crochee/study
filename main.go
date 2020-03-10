@@ -9,7 +9,7 @@ import "golangStu/testmyself"
  */
 
 func main() {
-	testmyself.StructTest()
+	testmyself.Cgotest()
 	/*// 初始化
 	gtk.Init(&os.Args)
 	// 用户初始化
