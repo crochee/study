@@ -1,6 +1,8 @@
 package main
 
-import "golangStu/testmyself"
+import (
+	"golangStu/testmyself"
+)
 
 /**
 * @ Description:
