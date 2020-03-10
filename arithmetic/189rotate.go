@@ -2,7 +2,7 @@ package arithmetic
 
 /**
 * @ Description:旋转数组
-* @Author: licongfu@ringle.com
+* @Author:
 * @Date: 2020/2/22 14:58
  */
 // 1.使用环状替换

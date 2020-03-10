@@ -4,7 +4,7 @@ import "math"
 
 /**
 * @ Description:
-* @Author: licongfu@ringle.com
+* @Author:
 * @Date: 2020/2/23 21:40
  */
 func Reverse(x int) int {

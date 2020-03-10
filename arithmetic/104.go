@@ -2,7 +2,7 @@ package arithmetic
 
 /**
 * @ Description:
-* @Author: licongfu@ringle.com
+* @Author:
 * @Date: 2020/3/2 13:59
  */
 

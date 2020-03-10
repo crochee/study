@@ -2,7 +2,7 @@ package arithmetic
 
 /**
 * @ Description:
-* @Author: licongfu@ringle.com
+* @Author:
 * @Date: 2020/2/23 16:32
  */
 func MoveZeroes(nums []int) {

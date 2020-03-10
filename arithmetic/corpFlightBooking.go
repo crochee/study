@@ -11,7 +11,7 @@ package arithmetic
 1 <= bookings.length <= 20000
 1 <= bookings[i][0] <= bookings[i][1] <= n <= 20000
 1 <= bookings[i][2] <= 10000
-* @Author: licongfu@ringle.com
+* @Author:
 * @Date: 2020/2/17 23:55
 */
 

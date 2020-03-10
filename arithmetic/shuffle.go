@@ -7,7 +7,7 @@ import (
 
 /**
 * @ Description:洗牌算法
-* @Author: licongfu@ringle.com
+* @Author:
 * @Date: 2020/3/4 19:33
  */
 func Shuffle(arr []int) {

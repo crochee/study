@@ -2,7 +2,7 @@ package arithmetic
 
 /**
 * @ Description:
-* @Author: licongfu@ringle.com
+* @Author:
 * @Date: 2020/2/23 23:10
  */
 func FirstUniqChar(s string) int {

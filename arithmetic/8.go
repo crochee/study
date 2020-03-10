@@ -8,7 +8,7 @@ import (
 
 /**
 * @ Description:
-* @Author: licongfu@ringle.com
+* @Author:
 * @Date: 2020/2/24 15:09
  */
 func MyAtoi(str string) int {

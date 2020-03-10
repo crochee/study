@@ -7,7 +7,7 @@ import (
 
 /**
 * @ Description:
-* @Author: licongfu@ringle.com
+* @Author:
 * @Date: 2020/2/24 17:11
  */
 func CountAndSay(n int) string {

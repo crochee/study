@@ -2,7 +2,7 @@ package arithmetic
 
 /**
 * @ Description:
-* @Author: licongfu@ringle.com
+* @Author:
 * @Date: 2020/2/23 19:02
  */
 func IsValidSudoku(board [][]byte) bool {

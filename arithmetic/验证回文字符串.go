@@ -6,7 +6,7 @@ import (
 
 /**
 * @ Description:
-* @Author: licongfu@ringle.com
+* @Author:
 * @Date: 2020/2/24 14:00
  */
 func IsPalindrome(s string) bool {

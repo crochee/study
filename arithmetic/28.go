@@ -4,7 +4,7 @@ import "strings"
 
 /**
 * @ Description:
-* @Author: licongfu@ringle.com
+* @Author:
 * @Date: 2020/2/24 16:39
  */
 func StrStr(haystack string, needle string) int {

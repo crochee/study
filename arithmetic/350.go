@@ -2,7 +2,7 @@ package arithmetic
 
 /**
 * @ Description:
-* @Author: licongfu@ringle.com
+* @Author:
 * @Date: 2020/2/22 19:32
  */
 func Intersect(nums1 []int, nums2 []int) []int {
