@@ -14,14 +14,16 @@ type Action struct {
 	Do  string `json:"do"`
 	Say string `json:"say"`
 }
+
 type OutSide struct {
 	Height int `json:"height"`
 }
+
 type people struct {
-	Name   string  `json:"name"`
-	Age    int     `json:"age"`
-	Action         // 匿名组合 相当于同一级
-	Out    OutSide `json:"out"`
+	Name string `json:"name"`
+	Age  int    `json:"age"`
+	Action // 匿名组合 相当于同一级
+	Out OutSide `json:"out"`
 }
 
 func StructTest() {

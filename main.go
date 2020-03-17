@@ -11,7 +11,7 @@ import (
  */
 
 func main() {
-	testmyself.Cgotest()
+	testmyself.StructTest()
 	/*// 初始化
 	gtk.Init(&os.Args)
 	// 用户初始化
