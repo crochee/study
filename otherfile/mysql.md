@@ -40,7 +40,73 @@ CREATE TABLE `order_commander` (
 ```sql
 alter table `trip_order_session` add column `ptid` varchar(5) NOT NULL DEFAULT '' COMMENT '渠道id'
 ```
-# 相关知识
+## MyISAM和InnoDB的区别
+1.  MyISAM：默认表类型，它是基于传统的ISAM类型，ISAM是Indexed Sequential Access Method (有索引的顺序访问方法) 的缩写，它是存储记录和文件的标准方法。不是事务安全的，而且不支持外键，如果执行大量的select，insert MyISAM比较适合
+2.  InnoDB：支持事务安全的引擎，支持外键、行锁、事务是他的最大特点。如果有大量的update和insert，建议使用InnoDB，特别是针对多个并发和QPS较高的情况
+### 表锁差异
+1.  myisam只支持表级锁，用户在操作myisam表时，select，update，delete，insert语句都会给表自动加锁，如果加锁以后的表满足insert并发的情况下，可以在表的尾部插入新的数据。也可以通过lock table命令来锁表，这样操作主要是可以模仿事务，但是消耗非常大，一般只在实验演示中使用
+2.  Innodb支持事务和行级锁，是innodb的最大特色
+### 数据库文件差异
+1.  myisam属于堆表
+    
+    myisam在磁盘存储上有三个文件，每个文件名以表名开头，扩展名指出文件类型。
+    
+    .frm 用于存储表的定义
+    
+    .MYD 用于存放数据
+    
+    .MYI 用于存放表索引
+    
+    myisam表还支持三种不同的存储格式：
+    
+    静态表(默认，但是注意数据末尾不能有空格，会被去掉)
+    
+    动态表
+    
+    压缩表
+2.  innodb属于索引组织表
+    
+    innodb有两种存储方式，共享表空间存储和多表空间存储
+    
+    两种存储方式的表结构和myisam一样，以表名开头，扩展名是.frm。
+    
+    如果使用共享表空间，那么所有表的数据文件和索引文件都保存在一个表空间里，一个表空间可以有多个文件，通过innodb_data_file_path和innodb_data_home_dir参数设置共享表空间的位置和名字，一般共享表空间的名字叫ibdata1-n。
+    
+    如果使用多表空间，那么每个表都有一个表空间文件用于存储每个表的数据和索引，文件名以表名开头，以.ibd为扩展名
+### 索引差异
+1.  **关于自动增长**
+    
+    myisam引擎的自动增长列必须是索引，如果是组合索引，自动增长可以不是第一列，他可以根据前面几列进行排序后递增。
+    
+    innodb引擎的自动增长咧必须是索引，如果是组合索引也必须是组合索引的第一列
+2.  **关于主键**
+    
+    myisam允许没有任何索引和主键的表存在，
+    
+    myisam的索引都是保存行的地址。
+    
+    innodb引擎如果没有设定主键或者非空唯一索引，就会自动生成一个6字节的主键(用户不可见)
+    
+    innodb的数据是主索引的一部分，附加索引保存的是主索引的值
+3.  **关于count()函数**
+    
+    myisam保存有表的总行数，如果select count(*) from table;会直接取出出该值
+    
+    innodb没有保存表的总行数，如果使用select count(*) from table；就会遍历整个表，消耗相当大，但是在加了wehre       条件后，myisam和innodb处理的方式都一样
+4.  **全文索引**
+    
+    myisam支持 FULLTEXT类型的全文索引
+    
+    innodb不支持FULLTEXT类型的全文索引，但是innodb可以使用sphinx插件支持全文索引，并且效果更好。（sphinx   是一个开源软件，提供多种语言的API接口，可以优化mysql的各种查询）
+5.  **delete from table**
+    
+    使用这条命令时，innodb不会从新建立表，而是一条一条的删除数据，在innodb上如果要清空保存有大量数据的表，最       好不要使用这个命令。(推荐使用truncate table，不过需要用户有drop此表的权限)
+6.  **索引保存位置**
+    
+    myisam的索引以表名+.MYI文件分别保存。
+    
+    innodb的索引和数据一起保存在表空间里
+###### 参考：https://www.cnblogs.com/y-rong/p/8110596.html
 ## 索引 
 ### 索引优缺点和使用原则
 **优点**
@@ -59,7 +125,8 @@ alter table `trip_order_session` add column `ptid` varchar(5) NOT NULL DEFAULT '
 ### 索引分类
 索引是在存储引擎中实现的，也就是说不同的存储引擎，会使用不同的索引
 
-MyISAM和InnoDB存储引擎：只支持BTREE索引， 也就是说默认使用BTREE，不能够更换；MEMORY/HEAP存储引擎：支持HASH和BTREE索引
+MyISAM和InnoDB存储引擎：只支持B+TREE索引， 也就是说默认使用BTREE，不能够更换；MEMORY/HEAP存储引擎：支持HASH和BTREE索引
+
 
 **单列索引**
 1.  **普通索引**->没有什么限制，允许在定义索引的列中插入重复值和空值，纯粹为了查询数据更快一点
