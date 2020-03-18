@@ -1,7 +1,6 @@
 # rabbitMQ
 rabbitMQ详情见：https://www.sojson.com/blog/48.html
-
-##RabbitMQ 选型和对比
+## RabbitMQ 选型和对比
 1.  **从社区活跃度**
 按照目前网络上的资料，RabbitMQ 、activeM 、ZeroMQ 三者中，综合来看，RabbitMQ 是首选。
 2.  **持久化消息比较**
