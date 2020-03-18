@@ -13,3 +13,5 @@
     2.  再哈希法
     3.  链地址法
     4.  建立一个公共溢出区
+3.  tcp与udp的区别
+    https://blog.csdn.net/qq_34624951/article/details/82669444
