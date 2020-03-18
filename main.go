@@ -1,7 +1,9 @@
 package main
 
 import (
-	"golangStu/testmyself"
+	"fmt"
+	"os"
+	"strings"
 )
 
 /**
@@ -11,7 +13,15 @@ import (
  */
 
 func main() {
-	testmyself.StructTest()
+	// testmyself.StructTest()
+	var s = make([]byte, 1024)
+	n, err := os.Stdin.Read(s)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+	ss := strings.Split(string(s[:n-2]), " ")
+	fmt.Println(n, len(ss), ss)
 	/*// 初始化
 	gtk.Init(&os.Args)
 	// 用户初始化
