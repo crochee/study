@@ -243,6 +243,17 @@ MySQL 事务主要用于处理操作量大，复杂度高的数据。比如说�
                             该隔离级别很少使用，吞吐量太低，，用户体验差
                             可以避免“幻像读”，每次读取都是数据库真实存在的数据，A与B串行，而不是并发
 
+   隔离级别的设置：1 my.ini 使用transaction-isolation设置（READ-UNCOMMITTED,READ-COMMITTED,REPEATABLE-READ,SERIALIZABLE）,例如:
+   ```text
+    [mysqld]
+    transaction-isolation = READ-COMMITTED
+   ```
+   
+   2 通过命令动态设置隔离级别，SET TRANSACTION ISOLATION LEVEL (READ UNCOMMITTED,READ COMMITTED,REPEATABLE READ,SERIALIZABLE)
+   
+   隔离级别的作用范围：1.全局级，对所有的会话有效 2.会话级，只对当前的会话有效 例如：
+   SET （GLOBAL,SESSION）TRANSACTION ISOLATION LEVEL READ-COMMITTED
+   
 **持久性**：事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。
 
 在 MySQL 命令行的默认设置下，事务都是自动提交的，即执行 SQL 语句后就会马上执行 COMMIT 操作。因此要显式地开启一个事务务须使用命令 BEGIN 或 START TRANSACTION，或者执行命令 SET AUTOCOMMIT=0，用来禁止使用当前会话的自动提交。
