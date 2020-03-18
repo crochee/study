@@ -2,6 +2,8 @@
 golang的垃圾回收采用的是 标记-清理（Mark-and-Sweep） 算法，
 就是先标记出需要回收的内存对象快，然后在清理掉
 ## 那么这个GC算法如何调度的？
+标记-清理（Mark-and-Sweep） 算法，参考https://www.jianshu.com/p/eb6b3aff9ca5
+
 GC会导致 stw (stop the world)的问题，中断用户逻辑
 
 **触发GC机制**
