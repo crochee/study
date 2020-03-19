@@ -9,7 +9,7 @@ package arithmetic
 func countOne(x int) int {
 	var count int
 	for x > 0 {
-		x &= x - 1 // x&（x-1） 从最高位开始将所有1置0
+		x &= x - 1 // x&（x-1） 从最低位开始将所有1置0
 		count++
 	}
 	return count
