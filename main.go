@@ -12,9 +12,9 @@ import (
  */
 
 func main() {
-	a := []int{5, 8, 6, 3, 9, 2, 1, 7}
+	a := []int{5, 8, 1, 6, 3, 9, 2, 1, 7}
 	fmt.Println(a)
-	arithmetic.BubbleSort4(a)
+	arithmetic.QuickSort(a, 0, len(a)-1)
 	fmt.Println(a)
 	/*// 初始化
 	gtk.Init(&os.Args)
