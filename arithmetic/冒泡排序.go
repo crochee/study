@@ -6,7 +6,7 @@ package arithmetic
 * @Date: 2020/3/20 17:08
  */
 
-// 普通冒泡排序 时间复杂度o(n*n)
+// 普通冒泡排序 时间复杂度O(n*n) 空间复杂度O(1)
 func BubbleSort1(nums []int) {
 	for i := 0; i < len(nums); i++ { // 内层循环的次数
 		for j := 0; j < len(nums)-i-1; j++ { // 左边大于右边交换
@@ -20,7 +20,7 @@ func BubbleSort1(nums []int) {
 // 冒泡排序优化版1
 func BubbleSort2(nums []int) {
 	for i := 0; i < len(nums); i++ { // 内层循环的次数
-		var flag bool // 加标志看一轮里是否有交换，来判断是否有序
+		var flag bool                        // 加标志看一轮里是否有交换，来判断是否有序
 		for j := 0; j < len(nums)-i-1; j++ { // 左边大于右边交换
 			if nums[j] > nums[j+1] {
 				nums[j], nums[j+1] = nums[j+1], nums[j]

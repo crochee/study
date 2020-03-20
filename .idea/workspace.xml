@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5cabb6f-0307-4809-a03c-80d2ecc04966" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/arithmetic/快速排序.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arithmetic/计数排序.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arithmetic/冒泡排序.go" beforeDir="false" afterPath="$PROJECT_DIR$/arithmetic/冒泡排序.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arithmetic/快速排序.go" beforeDir="false" afterPath="$PROJECT_DIR$/arithmetic/快速排序.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

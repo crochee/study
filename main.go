@@ -14,8 +14,8 @@ import (
 func main() {
 	a := []int{5, 8, 1, 6, 3, 9, 2, 1, 7}
 	fmt.Println(a)
-	arithmetic.QuickSort(a, 0, len(a)-1)
-	fmt.Println(a)
+	b := arithmetic.CountSort(a)
+	fmt.Println(b)
 	/*// 初始化
 	gtk.Init(&os.Args)
 	// 用户初始化

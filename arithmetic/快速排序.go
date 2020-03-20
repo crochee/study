@@ -5,7 +5,7 @@ package arithmetic
 * @Author:
 * @Date: 2020/3/20 18:45
  */
-// 快排递归版本 n*log(n)
+// 快排递归版本  平均时间复杂度O(nlogn) 空间复杂度O(logn)
 func QuickSort(nums []int, start, end int) {
 	if start >= end { // 结束条件
 		return
