@@ -10,7 +10,7 @@ func Intersect(nums1 []int, nums2 []int) []int {
 	for _, v := range nums1 {
 		temp1[v]++
 	}
-	var arr = make([]int,0)
+	var arr = make([]int, 0)
 	for _, v := range nums2 {
 		if num, ok := temp1[v]; ok && num > 0 {
 			arr = append(arr, v)

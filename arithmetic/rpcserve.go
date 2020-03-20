@@ -12,7 +12,7 @@ import (
 * @Author:
 * @Date: 2020/3/10 17:41
  */
-func main() {
+func servermain() {
 	RegisterHelloService(new(HelloService))
 	l, err := net.Listen("tcp", ":13149")
 	if err != nil {
@@ -26,7 +26,7 @@ func main() {
 	fmt.Println("finis!")
 }
 
-const HelloServiceName = "HelloService" //结构体名需要告诉对方
+const HelloServiceName = "HelloService" // 结构体名需要告诉对方
 
 type HelloServiceInterface interface {
 	Hello(request string, reply *string) error

@@ -2,8 +2,7 @@ package main
 
 import (
 	"fmt"
-	"os"
-	"strings"
+	"golangStu/arithmetic"
 )
 
 /**
@@ -13,15 +12,10 @@ import (
  */
 
 func main() {
-	// testmyself.StructTest()
-	var s = make([]byte, 1024)
-	n, err := os.Stdin.Read(s)
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(1)
-	}
-	ss := strings.Split(string(s[:n-2]), " ")
-	fmt.Println(n, len(ss), ss)
+	a := []int{5, 8, 6, 3, 9, 2, 1, 7}
+	fmt.Println(a)
+	arithmetic.BubbleSort4(a)
+	fmt.Println(a)
 	/*// 初始化
 	gtk.Init(&os.Args)
 	// 用户初始化

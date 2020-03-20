@@ -11,9 +11,9 @@ import (
 * @Author:
 * @Date: 2020/3/10 17:40
  */
-const HelloServiceName = "HelloService"
+// const HelloServiceName = "HelloService"
 
-func main() {
+func clientmain() {
 	c, err := DailHelloService("tcp", "10.2.4.39:13149")
 	if err != nil {
 		log.Fatal("dialing:", err)
@@ -26,7 +26,7 @@ func main() {
 	fmt.Println(reply)
 }
 
-var HelloServiceInterface = (*HelloServiceClient)(nil)
+// var HelloServiceInterface = (*HelloServiceClient)(nil)
 
 type HelloServiceClient struct {
 	*rpc.Client

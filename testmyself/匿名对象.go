@@ -20,10 +20,10 @@ type OutSide struct {
 }
 
 type people struct {
-	Name string `json:"name"`
-	Age  int    `json:"age"`
-	Action // 匿名组合 相当于同一级
-	Out OutSide `json:"out"`
+	Name   string  `json:"name"`
+	Age    int     `json:"age"`
+	Action         // 匿名组合 相当于同一级
+	Out    OutSide `json:"out"`
 }
 
 func StructTest() {
