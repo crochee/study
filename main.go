@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"os"
-	"strings"
+	"golangStu/arithmetic"
+	"sync"
 )
 
 /**
@@ -13,8 +13,18 @@ import (
  */
 
 func main() {
-	path := os.Getenv("Path")
-	fmt.Println(path, strings.Contains(path, "D:\\graphviz2.38\\bin"))
+	lru := arithmetic.NewLRUCache(20)
+	var s sync.WaitGroup
+	s.Add(20000)
+	for i := 0; i < 20000; i++ {
+		go func(i int) {
+			lru.Set(i, fmt.Sprintf("index%v", i))
+			s.Done()
+		}(i)
+	}
+	s.Wait()
+	temp := lru.All()
+	fmt.Println(temp, len(temp))
 	/*// 初始化
 	gtk.Init(&os.Args)
 	// 用户初始化
