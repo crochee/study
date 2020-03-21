@@ -16,7 +16,7 @@ type LRUCache struct {
 	capacity int
 }
 
-// 改进数据同步,主要是不同协程改变数据后，数据隔离的问题
+// 改进数据同步,主要是不同协程改变数据后，数据隔离的问题,即解决脏数据的问题
 // NewLRUCache 生成最少使用池对象
 func NewLRUCache(cap int) *LRUCache {
 	return &LRUCache{
