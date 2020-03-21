@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"golangStu/arithmetic"
+	"os"
+	"strings"
 )
 
 /**
@@ -12,10 +13,8 @@ import (
  */
 
 func main() {
-	a := []int{5, 8, 1, 6, 3, 9, 2, 1, 7}
-	fmt.Println(a)
-	arithmetic.InsertSort(a)
-	fmt.Println(a)
+	path := os.Getenv("Path")
+	fmt.Println(path, strings.Contains(path, "D:\\graphviz2.38\\bin"))
 	/*// 初始化
 	gtk.Init(&os.Args)
 	// 用户初始化
