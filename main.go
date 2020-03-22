@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"golangStu/arithmetic"
-	"sync"
 )
 
 /**
@@ -13,18 +12,33 @@ import (
  */
 
 func main() {
-	lru := arithmetic.NewLRUCache(20)
-	var s sync.WaitGroup
-	s.Add(20000)
-	for i := 0; i < 20000; i++ {
-		go func(i int) {
-			lru.Set(i, fmt.Sprintf("index%v", i))
-			s.Done()
-		}(i)
+	presetMap := []string{
+		". . . . . . . . . . . . . . . . . . . . . . . . . . .",
+		". . . . . . . . . . . . . . . . . . . . . . . . . . .",
+		". . . . . . . . . . . . . . . . . . . . . . . . . . .",
+		"X . X X X X X X X X X X X X X X X X X X X X X X X X X",
+		". . . . . . . . . . . . . . . . . . . . . . . . . . .",
+		". . . . . . . . . . . . . . . . . . . . . . . . . . .",
+		". . . . . . . . . . . . . . . . . . . . . . . . . . .",
+		". . . . . . . . . . . . . . . . . . . . . . . . . . .",
+		". . . . . . . . . . . . . . . . . . . . . . . . . . .",
+		". . . . . . . . . . . . . . . . . . . . . . . . . . .",
+		". . . . . . . . . . . . . . . . . . . . . . . . . . .",
+		"X X X X X X X X X X X X X X X X X X X X X X X X . X X",
+		". . . . . . . . . . . . . . . . . . . . . . . . . . .",
+		". . . . . . . . . . . . . . . . . . . . . . . . . . .",
+		". . . . . . . . . . . . . . . . . . . . . . . . . . .",
+		". . . . . . . . . . . . . . . . . . . . . . . . . . .",
+		". . . . . . . . . . . . . . . . . . . . . . . . . . .",
+		". . . . . . . . . . . . . . . . . . . . . . . . . . .",
+		". . . . . . . . . . . . . . . . . . . . . . . . . . .",
 	}
-	s.Wait()
-	temp := lru.All()
-	fmt.Println(temp, len(temp))
+	thismap := arithmetic.NewThisMap(presetMap)
+	sr := arithmetic.NewSearchRoad(0, 0, 18, 10, thismap)
+	if err := sr.FindoutRoad(); err != nil {
+		fmt.Println(err)
+	}
+	sr.Print()
 	/*// 初始化
 	gtk.Init(&os.Args)
 	// 用户初始化
