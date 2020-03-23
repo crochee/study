@@ -277,8 +277,7 @@ func (sr *SearchRoad) FindoutRoad() error {
 		}
 		sr.openLi.Pop(temp)
 		sr.closeLi.Push(temp)
-		startx = temp.x
-		starty = temp.y
+		startx, starty = temp.x, temp.y
 	}
 	// TODO 存在的问题是，当发现是死路的时候无法回溯，还需要回溯节点
 	return nil
