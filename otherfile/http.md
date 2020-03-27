@@ -52,6 +52,7 @@
 *   426 Upgrade Required 需要升级
 *   449 Retry With 重试
 *   451 Unavailable For Legal Reasons 因法律原因不可用
+*   499 客户端已关闭
 ## 5 服务器错误
 *   500 Internal Server Error 内部服务器错误
 *   501 Not Implemented 未实现
