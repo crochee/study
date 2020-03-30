@@ -2,11 +2,11 @@
 详情：https://blog.csdn.net/qq_39207948/article/details/80969968
 
 # 状态码
-## 1 消息
+## 1 请求处理中
 *   100 Continue 继续
 *   101 Switching Protocols 交换协议
 *   102 Processing 处理中
-## 2 成功
+## 2 请求成功
 *   200 OK 成功
 *   201 Created 创建
 *   202 Accepted 接受
@@ -24,7 +24,7 @@
 *   305 Use Proxy 使用代理
 *   306 Switch Proxy 关闭代理
 *   307 Temporary Redirect 临时重定向
-## 4 请求错误
+## 4 客户端错误
 *   400 Bad Request 错误请求
 *   401 Unauthorized 未经授权
 *   402 Payment Required 需要付款
@@ -65,3 +65,5 @@
 *   509 Bandwidth Limit Exceeded 超过带宽限制
 *   510 Not Extended 未拓展
 *   600 Unparseable Response Headers 不可解析的响应头
+## tcp3次握手和4次挥手
+参考：https://www.jianshu.com/p/29868fb82890

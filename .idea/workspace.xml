@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5cabb6f-0307-4809-a03c-80d2ecc04966" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/otherfile/设计模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/otherfile/设计模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherfile/docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/otherfile/docker.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherfile/http.md" beforeDir="false" afterPath="$PROJECT_DIR$/otherfile/http.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherfile/linux.md" beforeDir="false" afterPath="$PROJECT_DIR$/otherfile/linux.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
