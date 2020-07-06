@@ -18,6 +18,6 @@ $ 安装gogoprotobuf库文件 go get github.com/gogo/protobuf/proto
 
 $ //gogo protoc --gogo_out=. *.proto //gofast protoc --gofast_out=. *.proto
 
-$ 修改json tag 的插件
+$ 修改json tag 的插件 go get -u github.com/favadi/protoc-go-inject-tag   在proto文件加上// @inject_tag: json:"is_auth"   执行protoc-go-inject-tag -input=./user.pb.go
 
 $ 参考https://segmentfault.com/a/1190000009277748
