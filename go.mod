@@ -1,4 +1,4 @@
-module golangStu
+module stu
 
 go 1.13
 

@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"golangStu/arithmetic"
+
+	"stu/arithmetic"
 )
 
 /**
