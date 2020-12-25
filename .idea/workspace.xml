@@ -1,27 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5cabb6f-0307-4809-a03c-80d2ecc04966" name="Default Changelist" comment="合并">
+    <list default="true" id="d5cabb6f-0307-4809-a03c-80d2ecc04966" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherfile/http.md" beforeDir="false" afterPath="$PROJECT_DIR$/otherfile/http.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherfile/slice.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/otherfile/slice.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherfile/优化建议.md" beforeDir="false" afterPath="$PROJECT_DIR$/otherfile/优化建议.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +18,15 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="$PROJECT_DIR$/../../go1.13" />
+  <component name="GOROOT" path="$PROJECT_DIR$/../../go/go1.15" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="m9n9vwry" />
   </component>
   <component name="ProjectId" id="1Y7FQFfAX0YNrYgR0cw7pe6cFUb" />
   <component name="ProjectViewState">
@@ -50,6 +36,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
@@ -63,7 +50,7 @@
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="settings.editor.selected.configurable" value="go.sdk" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -73,7 +60,7 @@
       <recent name="$PROJECT_DIR$/otherfile" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Test.TestPreOrder in golangStu/arithmetic">
     <configuration name="go build A星寻路算法.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="golangStu" />
       <working_directory value="$PROJECT_DIR$" />
@@ -83,15 +70,26 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="TestPreOrder in golangStu/arithmetic" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golangStu" />
+      <working_directory value="$PROJECT_DIR$/arithmetic" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="golangStu/arithmetic" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestPreOrder$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestPreOrder in golangStu/arithmetic" />
         <item itemvalue="Go Build.go build A星寻路算法.go" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -106,30 +104,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="合并" />
-    <option name="LAST_COMMIT_MESSAGE" value="合并" />
+    <MESSAGE value="增加调试和分析定位手段" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加调试和分析定位手段" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <environment>
       <map>
-        <entry key="GOPROXY" value="direct" />
+        <entry key="GOPROXY" value="http://cmc.centralrepo.rnd.huawei.com/cbu-go,direct" />
       </map>
     </environment>
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="147" y="64" key="MergeDialog" timestamp="1603293510969">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1597799001538">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="147" y="64" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1603293510969" />
-    <state x="403" y="172" key="MultipleFileMergeDialog" timestamp="1603293510998">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597799001538" />
+    <state x="2385" y="166" key="SettingsEditor" timestamp="1597713135274">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="403" y="172" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1603293510998" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603293518903">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2385" y="166" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597713135274" />
+    <state x="2502" y="307" key="git4idea.merge.GitPullDialog" timestamp="1606291764747">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603293518903" />
+    <state x="2502" y="307" key="git4idea.merge.GitPullDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606291764747" />
   </component>
 </project>
