@@ -67,3 +67,6 @@
 *   600 Unparseable Response Headers 不可解析的响应头
 ## tcp3次握手和4次挥手
 参考：https://www.jianshu.com/p/29868fb82890
+
+# 注意
+因为XMLHttpRequest规范的限制，浏览器中ajax发送的http请求，get，delete请求不能携带实体
