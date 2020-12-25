@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5cabb6f-0307-4809-a03c-80d2ecc04966" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherfile/slice.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/otherfile/slice.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherfile/优化建议.md" beforeDir="false" afterPath="$PROJECT_DIR$/otherfile/优化建议.md" afterDir="false" />
+    <list default="true" id="d5cabb6f-0307-4809-a03c-80d2ecc04966" name="Default Changelist" comment="增加http get delete不带body的原因">
+      <change beforePath="$PROJECT_DIR$/otherfile/http.md" beforeDir="false" afterPath="$PROJECT_DIR$/otherfile/http.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,14 +133,10 @@
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1597799001538">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608899137830">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597799001538" />
-    <state x="2385" y="166" key="SettingsEditor" timestamp="1597713135274">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2385" y="166" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597713135274" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608899137830" />
     <state x="2502" y="307" key="git4idea.merge.GitPullDialog" timestamp="1606291764747">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

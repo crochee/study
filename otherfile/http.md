@@ -69,4 +69,4 @@
 参考：https://www.jianshu.com/p/29868fb82890
 
 # 注意
-因为XMLHttpRequest规范的限制，浏览器中ajax发送的http请求，get，delete请求不能携带实体
+因为XMLHttpRequest规范的限制，浏览器中ajax发送的http请求，get,delete,head请求不能携带实体
