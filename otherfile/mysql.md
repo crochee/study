@@ -377,5 +377,4 @@ SET AUTOCOMMIT=1 开启自动提交
     用下面的语句替换：
     select num from a where exists(select 1 from b where num=a.num)
     
-    
-    
+4.  beego的orm会自动建关系，所以有时候外键的值为0是取不到值
