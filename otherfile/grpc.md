@@ -24,3 +24,18 @@ $ 修改json tag 的插件 go get -u github.com/favadi/protoc-go-inject-tag   �
 $ go-micro插件 go get github.com/micro/micro/v2/cmd/protoc-gen-micro@master
 
 $ 参考https://segmentfault.com/a/1190000009277748
+
+## 整体流程
+大致就是以 .proto 文件为基础，编写插件对 protoc 进行扩展，编译出不同语言不同模块的源文件。
+
+1）首先定义 .proto 文件；
+2）然后由 protoc 将 .proto 文件编译成 protobuf 格式的数据；
+3）将 2 中编译后的数据传递到各个插件，生成对应语言、对应模块的源代码。
+Go Plugins 用于生成 .pb.go 文件
+gRPC Plugins 用于生成 _grpc.pb.go
+gRPC-Gateway 则是 pb.gw.go
+其中步骤2和3是一起的，只需要在 protoc 编译时传递不同参数即可。
+
+比如以下命令会同时生成 Go、gRPC 、gRPC-Gateway 需要的 3 个文件。
+
+protoc --go_out . --go-grpc_out . --grpc-gateway_out . hello_world.proto
