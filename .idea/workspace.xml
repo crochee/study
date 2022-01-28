@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d5cabb6f-0307-4809-a03c-80d2ecc04966" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otherfile/docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/otherfile/docker.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otherfile/golang面试的问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/otherfile/golang面试的问题.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +39,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
@@ -107,8 +115,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -139,28 +148,5 @@
       </map>
     </environment>
     <proxy>direct</proxy>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2622" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610504497367">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2622" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1610504497367" />
-    <state x="2450" y="0" key="CommitChangelistDialog2" timestamp="1610508847082">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2450" y="0" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1610508847082" />
-    <state x="2371" y="183" key="Vcs.Push.Dialog.v2" timestamp="1610508876093">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608899137830" />
-    <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1610508876093" />
-    <state x="2582" y="223" width="596" height="594" key="find.popup" timestamp="1610504570894">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2582" y="223" width="596" height="594" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1610504570894" />
-    <state x="2502" y="307" key="git4idea.merge.GitPullDialog" timestamp="1610508903919">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2502" y="307" key="git4idea.merge.GitPullDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1610508903919" />
   </component>
 </project>
